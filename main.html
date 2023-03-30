@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a86f4fac7b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>qwik-meditate</title>
+</head>
+
+<body class="container">
+  
+  <div class="top-bar" id="siteTitle">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">qwik-meditate</li>
+      </ul>
+    </div>
+  </div>
+
+  <content id="#page2Content">
+
+    <div style="margin: auto; width: 400px" id="minutes">
+      <label>How long would you like to meditate for? (in minutes)</label>
+      <input type="text" id="userLength" value="2">
+    </div>
+
+    <div style="margin: auto; width: 400px" id="themeAndAffirmationSelect">
+      <label>Theme:</label>
+      <select name="themes" id="themeSelect">
+        <option value="desert">Desert</option>
+        <option value="forest">Forest</option>
+        <option value="mountain">Mountain</option>
+        <option value="ocean">Ocean</option>
+        <option value="sky">Sky</option>
+      </select>
+
+      <label>Affirmation:</label>
+      <select name="affirmations" id="affirmationSelect">
+        <option value="abundance">Abundance</option>
+        <option value="health">Health</option>
+        <option value="happiness">Happiness</option>
+        <option value="love">Love</option>
+        <option value="success">Success</option>
+      </select>
+
+      <div id="noAudio">
+        <form action="">
+          <input type="checkbox" id="audioCheck" name="audio" value="audio">
+          <label for="Audio"> No Audio?</label>
+          <br>
+      </div>
+
+      <div class="grid-x" id="startMenu">
+        <a class="_button" id="getStarted">Go!</a>
+      </div>
+    </div>
+
+    <div id="generatedContent">
+      <span id="time" style="color: white; background-color: black;"></span>
+      <div id="affirmationAndButtons">
+        <span id="affirmation" style="color: white; text-shadow: 2px 2px black; font-size: 36px;"></span><br>
+        <button type="button" id="pauseBtn" style="text-shadow: 2px 2px white;  padding: 2px;">Pause<i></i></button>
+          <button type="button" id="stopBtn" style="text-shadow: 2px 2px white;  padding: 2px;"><i
+              class="fas fa-stop">Stop Meditation</i></button>
+      </div>
+    </div>
+
+
+  </content>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
